@@ -1,7 +1,7 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Excersise1 {
+public class Exercise1 {
 
     public static void main(String[] args){
         String str = "Lisboa (Lisbon, Portugal), " +
@@ -9,7 +9,6 @@ public class Excersise1 {
                 " Roma (Rome, Italy)";
 
 // nawias ( biale znaki dowolna ilosc, biale znaki, nazwa kraju, zamkniecie )
-
 
         Matcher m = Pattern.compile("\\((\\p{L}+)\\s*,\\s*(\\p{L}+)\\)").matcher(str);
         while (m.find()) {

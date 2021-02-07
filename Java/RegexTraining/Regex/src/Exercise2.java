@@ -7,13 +7,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-public class FirstLast {
+public class Exercise2 {
     public static void main (String[] args) {
 
         //Writing a text
 
         try {
-            File myFile = new File("FirstLast.txt");
             FileWriter myWriter = new FileWriter("FirstLast.txt");
             myWriter.write("Angola, Bahama, Zanzibar, baobab,\n" +
                     "égalité, ćwierć, pół, Kraśnik\n");
@@ -35,7 +34,7 @@ public class FirstLast {
             System.out.println("Problems...");
             System.exit(1);
         }
-        String reg = "(.).*";
+        String reg = "(?i)\\b(\\p{L})\\p{L}*\\1\\b";
         Matcher m = Pattern.compile(reg).matcher(text);
         while (m.find())
             System.out.println(m.group());
@@ -43,3 +42,7 @@ public class FirstLast {
 
 
 }
+
+//              ?i - ignore for example big small letters
+//              \\b - one letter find -> The metacharacter \b is an anchor like the caret and the dollar sign.
+//              \\ 1 refer to first group
