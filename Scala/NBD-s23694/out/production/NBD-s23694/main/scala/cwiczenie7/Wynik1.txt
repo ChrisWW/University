@@ -1,0 +1,40 @@
+
+labnbd@labnbd-virtual-machine:~$ curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Michal", "Work": "Engineer", salary: 1000, "country": "poland"}' http://localhost:8098/buckets/s23694/keys/work1
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (jokes are better explained)
+Date: Mon, 21 Jun 2021 22:39:52 GMT
+Content-Type: application/json
+Content-Length: 0
+
+labnbd@labnbd-virtual-machine:~$ curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Zbyszek", "Work": "Dev", salary: 7000, "country": "poland"}' http://localhost:8098/buckets/s23694/keys/work2
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (jokes are better explained)
+Date: Mon, 21 Jun 2021 22:39:52 GMT
+Content-Type: application/json
+Content-Length: 0
+
+labnbd@labnbd-virtual-machine:~$ curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Czeslaw", "Work": "IT Dev", salary: 19000, "country": "ukraine"}' http://localhost:8098/buckets/s23694/keys/work3
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (jokes are better explained)
+Date: Mon, 21 Jun 2021 22:39:52 GMT
+Content-Type: application/json
+Content-Length: 0
+
+labnbd@labnbd-virtual-machine:~$ curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Kornel", "Work": "Cooker", salary: 8000, "country": "germany"}' http://localhost:8098/buckets/s23694/keys/work4
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (jokes are better explained)
+Date: Mon, 21 Jun 2021 22:39:52 GMT
+Content-Type: application/json
+Content-Length: 0
+
+labnbd@labnbd-virtual-machine:~$ curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Krystian", "Work": "Dentist", salary: 15000, "country": "poland"}' http://localhost:8098/buckets/s23694/keys/work5
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (jokes are better explained)
+Date: Mon, 21 Jun 2021 22:39:52 GMT
+Content-Type: application/json
+Content-Length: 0

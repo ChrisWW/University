@@ -1,0 +1,8 @@
+Pobrano dane o cenie: 2000 produktu: MacBook
+Cena produktu: MacBook wynosi: 2000
+Pobrano dane o cenie: 1600 produktu: Dell
+Cena produktu: Dell wynosi: 1600
+Produkt: Dell zostal usuniety
+Cena produktu: Dell wynosi: None
+
+Process finished with exit code 0

@@ -1,0 +1,1 @@
+printjson(db.nbd.find({"sex": "Male","nationality": "Germany" }).toArray())

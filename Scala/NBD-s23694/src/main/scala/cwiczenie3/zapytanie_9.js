@@ -1,0 +1,1 @@
+printjson(db.nbd.updateMany({ first_name: "Antonio" }, { $set: { "hobby": "pingpong" } }))

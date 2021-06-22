@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVIcypz/foZIOM/NYEpkzmNlsAjKuMGXBQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (jokes are better explained)
+Link: </s23694>; rel="up"
+Last-Modified: Mon, 21 Jun 2021 22:39:52 GMT
+ETag: "73RF3ISxeXfThYnD4oDVzi"
+Date: Mon, 21 Jun 2021 22:39:52 GMT
+Content-Type: application/json
+Content-Length: 75
+
+'{"Name": "Zbyszek", "Work": "Dev", salary: 7000, "country": "poland"}'

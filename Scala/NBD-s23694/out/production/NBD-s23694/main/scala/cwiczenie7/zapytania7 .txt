@@ -1,0 +1,27 @@
+1.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Michal", "Work": "Engineer", salary: 1000, "country": "poland"}' http://localhost:8098/buckets/s23694/keys/work1
+curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Zbyszek", "Work": "Dev", salary: 7000, "country": "poland"}' http://localhost:8098/buckets/s23694//keys/work2
+curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Czeslaw", "Work": "IT Dev", salary: 19000, "country": "ukraine"}' http://localhost:8098/buckets/s23694/keys/work3
+curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Kornel", "Work": "Cooker", salary: 8000, "country": "germany"}' http://localhost:8098/buckets/s23694/keys/work4
+curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Krystian", "Work": "Dentist", salary: 15000, "country": "poland"}' http://localhost:8098/buckets/s23694/keys/work5
+2.
+curl -i http://localhost:8098/buckets/s23694/keys/work2
+3.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Michal", "Work": "Engineer", salary: 1000, "country": "poland", "car": "ferrari"}' http://localhost:8098/buckets/s23694/keys/work1
+4.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Zbyszek", "Work": "Dev", salary: 7000}' http://localhost:8098/buckets/s23694/keys/work2
+5.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"Name": "Kornel", "Work": "Cooker", salary: 6000, "country": "germany"}' http://localhost:8098/buckets/s23694/keys/work4
+6.
+curl -i -XDELETE -H "Content-Type: application/json" http://localhost:8098/buckets/s23694/keys/work3
+7.
+curl -i http://localhost:8098/buckets/s23694/keys/work7
+8.
+curl -i -H "Content-Type: application/json" -d '{"Name": "Kanasty"}' http://localhost:8098/buckets/s23694/keys/
+9.
+curl -i http://localhost:8098/buckets/s23694/keys/R8saxUitC3L6pJAhihpCcDoSMg6
+10.
+curl -i -XDELETE -H "Content-Type: application/json" http://localhost:8098/buckets/s23694/keys/R8saxUitC3L6pJAhihpCcDoSMg6
+
+
+

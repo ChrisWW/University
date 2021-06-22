@@ -1,0 +1,1 @@
+printjson(db.nbd.remove({ "height": { "$gt": "190" } }))

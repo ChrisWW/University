@@ -1,0 +1,6 @@
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (jokes are better explained)
+Date: Mon, 21 Jun 2021 22:39:52 GMT
+Content-Type: application/json
+Content-Length: 0

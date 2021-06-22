@@ -1,0 +1,57 @@
+1.MATCH (t1 {name:"Darjeeling"}),(t2 {name:"Sandakphu"}),
+ short=allShortestPaths((t1)-[x*]-(t2)) RETURN short
+
+2.MATCH (t1 {name:"Darjeeling"}),(t2 {name:"Sandakphu"}), 
+short=allShortestPaths((t1)-[x*]-(t2)) 
+WHERE ALL(y IN x WHERE y.winter="true")
+return short
+
+3.MATCH allPaths = (t1 {name:"Darjeeling"})-[x*]->(t2 {name:"Sandakphu"}) 
+RETURN allPaths, reduce(i=0, n IN relationships(allPaths) | i+n.distance) AS y
+ORDER BY y
+
+4.MATCH (a1:Airport)<-[:ORIGIN]-(f1:Flight) 
+return a1, 
+count(*) as x order by x DESC
+
+5.
+MATCH path= ((a1 :Aiport{name:"LAX"})-[f:CHEAPEST_FLIGHT*..2]->(a2:Airport))
+WITH a1, a2, REDUCE(price=0, n IN f | price + n.price) as P
+WHERE P < 3000
+RETURN DISTINCT a2
+
+
+
+6.
+MATCH (a1:Aiport{ name:"LAX" }), (a2 :Aiport{name:'DAY'}), 
+road = (a1)-[:CONNECTION*]->(a2)
+	WITH road, relationships(road) AS y
+	return road, 
+    REDUCE(p = 0, y IN y | p + y.price) AS x 
+    ORDER BY x
+
+7.
+MATCH path= ((a1:Aiport{name:"LAX"})-[x:CHEAPEST_FLIGHT*]->(a2:Aiport{name:"DAY"}))
+WITH a1, a2, 
+REDUCE(price=0, n IN x | price + n.price) as P
+RETURN a1, a2, P
+ORDER BY P
+LIMIT 1
+
+8.
+MATCH path= ((a1:Aiport{name:"LAX"})-[x:CHEAPEST_FLIGHT*..3{class:"business"}]->(a2:Aiport{name:"DAY"}))
+WITH a1, a2, 
+REDUCE(price=0, n IN x | price + n.price) as P
+RETURN a1, a2, P
+ORDER BY P
+LIMIT 1
+
+9.
+MATCH p=(a1:Airport)<-[:ORIGIN]-(:Flight)-[:DESTINATION]->(a2:Airport) 
+return a1, count(Distinct a2)
+
+10.
+MATCH p=(a1:Airport)-[y:LOT*2]->(a2:Airport)
+with p, reduce(p = 0, t in y | p + t.cena) as X
+return X 
+order by X LIMIT 1

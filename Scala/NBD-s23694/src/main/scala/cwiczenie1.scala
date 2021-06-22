@@ -64,7 +64,7 @@ object cwiczenie1 {
     println()
     println("Zadanie 10")
     println()
-    println(addOne(List(1, 0, 2, -4, 0, -1)))
+    println(absoluteValue(List(-1, 0, 2, -4, 0, 1)))
 
   }
 
@@ -243,11 +243,11 @@ object cwiczenie1 {
     ourList map (element => element + 1)
   }
 
-  // Zadanie 10 Do poprawy
-  def absoluteValue(ourList: List[Int]): List[Int] = {
+  // Zadanie 10
+  def absoluteValue(ourList: List[Int]): Unit = {
     val filterList = ourList.filter(element => (element >= -5 && element <= 12)).map(element => element.abs)
 
     println(filterList)
-    return filterList
+
   }
 }

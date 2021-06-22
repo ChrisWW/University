@@ -1,0 +1,7 @@
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (jokes are better explained)
+Location: /buckets/s23694/keys/R8saxUitC3L6pJAhihpCcDoSMg6
+Date: Mon, 21 Jun 2021 22:39:52 GMT
+Content-Type: application/json
+Content-Length: 0
