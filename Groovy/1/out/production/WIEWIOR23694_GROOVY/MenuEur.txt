@@ -1,0 +1,5 @@
+Vege 3,19
+DanieI 4,25
+Surowka 2,13
+Kompot 1,06
+Herbata 0,64

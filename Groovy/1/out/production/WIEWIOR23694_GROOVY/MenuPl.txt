@@ -1,0 +1,5 @@
+Vege 15
+DanieI 20
+Surowka 10
+Kompot 5
+Herbata 3

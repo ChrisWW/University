@@ -1,0 +1,7 @@
+Jan Programista	Projekt1	Projekt4
+Jan Nowak	Projekt1	Projekt4
+Krystian Chris	Projekt1	Projekt4
+Jan Kowalski	Projekt2
+Zbigniew Nowakowski	Projekt2
+Krzysztof Nowak	Projekt2	Projekt3	Projekt4
+Krzysiek Kowalski	Projekt3

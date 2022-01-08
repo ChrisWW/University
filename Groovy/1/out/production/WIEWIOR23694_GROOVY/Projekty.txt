@@ -1,0 +1,4 @@
+Projekt1	Jan Programista	Jan Nowak	Krystian Chris
+Projekt2	Jan Kowalski	Zbigniew Nowakowski	Krzysztof Nowak
+Projekt3	Krzysiek Kowalski	Krzysztof Nowak
+Projekt4	Jan Programista	Jan Nowak	Krystian Chris	Krzysztof Nowak
